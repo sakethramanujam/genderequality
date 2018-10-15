@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87d74b510bc219949ad9498abb2a063f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 20
+  inittime: 20
   slider: {fileID: 464741394}
   _text: {fileID: 445473614}
   timeText: {fileID: 2049194845}
