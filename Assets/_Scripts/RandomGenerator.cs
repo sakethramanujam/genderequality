@@ -33,22 +33,22 @@ public class RandomGenerator : MonoBehaviour
 
             if (randomNumber >= 0 && randomNumber < 25)
             {
-                this.transform.localScale = new Vector3(8.5f, 2.87041f, 4.020913f);
+                this.transform.localScale = new Vector3(.69f, .37f, 4.020913f);
             }
 
             else if (randomNumber >= 25 && randomNumber < 50)
             {
-                this.transform.localScale = new Vector3(10f, 2.87041f, 4.020913f);
+                this.transform.localScale = new Vector3(.84f, .37f, 4.020913f);
             }
 
             else if (randomNumber >= 50 && randomNumber < 75)
             {
-                this.transform.localScale = new Vector3(11.5f, 2.87041f, 4.020913f);
+                this.transform.localScale = new Vector3(.99f, .37f, 4.020913f);
             }
 
             else
             {
-                this.transform.localScale = new Vector3(13f, 2.87041f, 4.020913f);
+                this.transform.localScale = new Vector3(1.14f, .37f, 4.020913f);
             }
         }
     }

@@ -89,26 +89,26 @@ public class PlayerManager : MonoBehaviour
 
     public void maleGoalIncrement()
     {
-        if(maleGoal.transform.localScale.x<=13f)
-            maleGoal.transform.localScale += new Vector3(1.5f, 0, 0);
+        if(maleGoal.transform.localScale.x<=1.14f)
+            maleGoal.transform.localScale += new Vector3(.15f, 0, 0);
     }
 
     public void maleGoalDecrement()
     {
-        if (maleGoal.transform.localScale.x >= 7f)
-            maleGoal.transform.localScale -= new Vector3(1.5f, 0, 0);
+        if (maleGoal.transform.localScale.x >= .69f)
+            maleGoal.transform.localScale -= new Vector3(.15f, 0, 0);
     }
 
     public void femaleGoalIncrement()
     {
-        if (maleGoal.transform.localScale.x <= 13f)
-            femaleGoal.transform.localScale += new Vector3(1.5f, 0, 0);
+        if (femaleGoal.transform.localScale.x <= 1.14f)
+            femaleGoal.transform.localScale += new Vector3(.15f, 0, 0);
     }
 
     public void femaleGoalDecrement()
     {
-        if (maleGoal.transform.localScale.x >= 7f)
-            femaleGoal.transform.localScale -= new Vector3(1.5f, 0, 0);
+        if (femaleGoal.transform.localScale.x >= .69f)
+            femaleGoal.transform.localScale -= new Vector3(.15f, 0, 0);
     }
 
     public void reload()
