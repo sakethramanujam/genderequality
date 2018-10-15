@@ -46,7 +46,7 @@ public class Timer : MonoBehaviour
         {
             time -= Time.deltaTime;
             slider.value = time;
-            timeText.text = time.ToString();
+            timeText.text = System.Math.Round(time,2).ToString();
         }
 
         else if (time < 0)
@@ -60,7 +60,7 @@ public class Timer : MonoBehaviour
 
         if (canCheck)
         {
-            if (j == k && (maleGoal.transform.localScale.x == femaleGoal.transform.localScale.x))
+            if (j == k && (System.Math.Round(maleGoal.transform.localScale.x,2) == System.Math.Round(femaleGoal.transform.localScale.x,2)))
             {
                 l++;
                 Debug.Log("Success");
@@ -159,22 +159,22 @@ public class Timer : MonoBehaviour
 
                 if (randomNumber >= 0 && randomNumber < 25)
                 {
-                    maleGoal.transform.localScale = new Vector3(8.5f, 2.87041f, 4.020913f);
+                    maleGoal.transform.localScale = new Vector3(.69f, .37f, 4.020913f);
                 }
 
                 else if (randomNumber >= 25 && randomNumber < 50)
                 {
-                    maleGoal.transform.localScale = new Vector3(10f, 2.87041f, 4.020913f);
+                    maleGoal.transform.localScale = new Vector3(.84f, .37f, 4.020913f);
                 }
 
                 else if (randomNumber >= 50 && randomNumber < 75)
                 {
-                    maleGoal.transform.localScale = new Vector3(11.5f, 2.87041f, 4.020913f);
+                    maleGoal.transform.localScale = new Vector3(.99f, .37f, 4.020913f);
                 }
 
                 else
                 {
-                    maleGoal.transform.localScale = new Vector3(13f, 2.87041f, 4.020913f);
+                    maleGoal.transform.localScale = new Vector3(1.14f, .37f, 4.020913f);
                 }
             }
 
@@ -184,22 +184,22 @@ public class Timer : MonoBehaviour
 
                 if (randomNumber >= 0 && randomNumber < 25)
                 {
-                    femaleGoal.transform.localScale = new Vector3(8.5f, 2.87041f, 4.020913f);
+                    femaleGoal.transform.localScale = new Vector3(.69f, .37f, 4.020913f);
                 }
 
                 else if (randomNumber >= 25 && randomNumber < 50)
                 {
-                    femaleGoal.transform.localScale = new Vector3(10f, 2.87041f, 4.020913f);
+                    femaleGoal.transform.localScale = new Vector3(.84f, .37f, 4.020913f);
                 }
 
                 else if (randomNumber >= 50 && randomNumber < 75)
                 {
-                    femaleGoal.transform.localScale = new Vector3(11.5f, 2.87041f, 4.020913f);
+                    femaleGoal.transform.localScale = new Vector3(.99f, .37f, 4.020913f);
                 }
 
                 else
                 {
-                    femaleGoal.transform.localScale = new Vector3(13f, 2.87041f, 4.020913f);
+                    femaleGoal.transform.localScale = new Vector3(1.14f, .37f, 4.020913f);
                 }
             }
         }
