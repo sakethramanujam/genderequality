@@ -115,4 +115,9 @@ public class PlayerManager : MonoBehaviour
     {
         Application.LoadLevel(Application.loadedLevel);
     }
+
+    public void loadMenu()
+    {
+        Application.LoadLevel("MainMenu");
+    }
 }
