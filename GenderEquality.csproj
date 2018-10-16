@@ -78,6 +78,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Scripts\MenuManager.cs" />
     <Compile Include="Assets\_Scripts\PlayerManager.cs" />
     <Compile Include="Assets\_Scripts\RandomGenerator.cs" />
     <Compile Include="Assets\_Scripts\Timer.cs" />
