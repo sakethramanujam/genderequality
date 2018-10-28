@@ -19,6 +19,7 @@ public class Timer : MonoBehaviour
     GameObject maleGoal;
     GameObject femaleGoal;
     bool canCheck;
+    public GameObject panel;
     public Text _text;
     public Text timeText;
     // Use this for initialization
@@ -81,6 +82,7 @@ public class Timer : MonoBehaviour
             {
                 Debug.Log("Failed");
                 _text.text = "Streak : " + l.ToString() + " GameOver";
+                panel.SetActive(true);
                 canCheck = false;
             }
         }

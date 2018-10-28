@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     public Sprite musicOn;
     public Sprite musicOff;
     public GameObject musicImage;
+    public GameObject audSource;
     // Use this for initialization
     void Start()
     {
@@ -22,7 +23,9 @@ public class MenuManager : MonoBehaviour
 
     public void onPlayClick()
     {
+      
         Application.LoadLevel("GenderEquality");
+        
     }
 
     public void creditBack()
@@ -50,12 +53,13 @@ public class MenuManager : MonoBehaviour
         if(musicImage.GetComponent<Image>().sprite==musicOn)
         {
             musicImage.GetComponent<Image>().sprite = musicOff;
+            audSource.GetComponent<AudioSource>().volume = 0;
         }
 
         else
-
         {
             musicImage.GetComponent<Image>().sprite = musicOn;
+            audSource.GetComponent<AudioSource>().volume = 1;
         }
     }
 }
