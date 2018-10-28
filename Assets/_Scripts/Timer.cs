@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class Timer : MonoBehaviour
 {
     public float inittime;
+    public AudioClip Cheer;
+    public AudioClip Boo;
+    public AudioSource audsou;
     float time;
     float timeDecre;
     public Slider slider;
@@ -65,6 +69,7 @@ public class Timer : MonoBehaviour
             {
                 l++;
                 Debug.Log("Success");
+                audsou.GetComponent<AudioSource>().PlayOneShot(Cheer,.5f);
                 _text.text = "Streak : " + l.ToString() ;
                 randomTeam();
                 randomGoal();
@@ -81,7 +86,8 @@ public class Timer : MonoBehaviour
             else
             {
                 Debug.Log("Failed");
-                _text.text = "Streak : " + l.ToString() + " GameOver";
+                audsou.GetComponent<AudioSource>().PlayOneShot(Boo, .5f);
+                _text.text = "Streak : " + l.ToString() + "  GameOver";
                 panel.SetActive(true);
                 canCheck = false;
             }
@@ -161,22 +167,22 @@ public class Timer : MonoBehaviour
 
                 if (randomNumber >= 0 && randomNumber < 25)
                 {
-                    maleGoal.transform.localScale = new Vector3(.69f, .37f, 4.020913f);
+                    maleGoal.transform.localScale = new Vector3(1.26f, .71f, 1f);
                 }
 
                 else if (randomNumber >= 25 && randomNumber < 50)
                 {
-                    maleGoal.transform.localScale = new Vector3(.84f, .37f, 4.020913f);
+                    maleGoal.transform.localScale = new Vector3(1.51f, .71f, 1f);
                 }
 
                 else if (randomNumber >= 50 && randomNumber < 75)
                 {
-                    maleGoal.transform.localScale = new Vector3(.99f, .37f, 4.020913f);
+                    maleGoal.transform.localScale = new Vector3(1.76f, .71f, 1f);
                 }
 
                 else
                 {
-                    maleGoal.transform.localScale = new Vector3(1.14f, .37f, 4.020913f);
+                    maleGoal.transform.localScale = new Vector3(2.01f, .71f, 1f);
                 }
             }
 
@@ -186,22 +192,22 @@ public class Timer : MonoBehaviour
 
                 if (randomNumber >= 0 && randomNumber < 25)
                 {
-                    femaleGoal.transform.localScale = new Vector3(.69f, .37f, 4.020913f);
+                    femaleGoal.transform.localScale = new Vector3(1.26f, .71f, 1f);
                 }
 
                 else if (randomNumber >= 25 && randomNumber < 50)
                 {
-                    femaleGoal.transform.localScale = new Vector3(.84f, .37f, 4.020913f);
+                    femaleGoal.transform.localScale = new Vector3(1.51f, .71f, 1f);
                 }
 
                 else if (randomNumber >= 50 && randomNumber < 75)
                 {
-                    femaleGoal.transform.localScale = new Vector3(.99f, .37f, 4.020913f);
+                    femaleGoal.transform.localScale = new Vector3(1.76f, .71f, 1f);
                 }
 
                 else
                 {
-                    femaleGoal.transform.localScale = new Vector3(1.14f, .37f, 4.020913f);
+                    femaleGoal.transform.localScale = new Vector3(2.01f, .71f, 1f);
                 }
             }
         }
