@@ -12,8 +12,12 @@ EditorBuildSettings:
     path: Assets/_Scenes/GenderEquality.unity
     guid: 6a65999f57416fa42bcdd68de6536e32
   - enabled: 1
+    path: Assets/_Scenes/Help.unity
+    guid: 7d576335a8f3531448d37fc7ee624d06
+  - enabled: 1
     path: Assets/_Scenes/Credits.unity
     guid: b2e8567adf2828d44b0d435278980570
   - enabled: 1
-    path: Assets/_Scenes/Help.unity
-    guid: 7d576335a8f3531448d37fc7ee624d06
+    path: Assets/_Scenes/Tutorial.unity
+    guid: eba94ba5c1d23404fa3b639ed395f2fe
+  m_configObjects: {}

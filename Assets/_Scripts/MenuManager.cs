@@ -24,7 +24,7 @@ public class MenuManager : MonoBehaviour
     public void onPlayClick()
     {
       
-        Application.LoadLevel("GenderEquality");
+        Application.LoadLevel("Tutorial");
         
     }
 
